@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "87313991339",
+    "project_id": "flutter-contact-853e3",
+    "storage_bucket": "flutter-contact-853e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87313991339:android:7f27a18fbfc957f950d9ee",
+        "android_client_info": {
+          "package_name": "com.example.contactlist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq-f_cQ7BeopqEdUyuRLl2-sRPU7UUpVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
