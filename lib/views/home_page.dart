@@ -162,7 +162,7 @@ class _HomepageState extends State<Homepage> {
           }
           return snapshot.data!.docs.length == 0
               ? Center(
-            child: Text("No Contacts Found ..."),
+            child: Text("You can store your favorite contacts in this app."),
           )
               : ListView(
             children: snapshot.data!.docs
