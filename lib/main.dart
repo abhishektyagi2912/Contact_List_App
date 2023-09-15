@@ -1,7 +1,8 @@
-import 'package:contactlist/views/add_contact_page.dart';
-import 'package:contactlist/views/home_page.dart';
-import 'package:contactlist/views/login_page.dart';
-import 'package:contactlist/views/signup_page.dart';
+
+import 'package:Contact_List/views/add_contact_page.dart';
+import 'package:Contact_List/views/home_page.dart';
+import 'package:Contact_List/views/login_page.dart';
+import 'package:Contact_List/views/signup_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
