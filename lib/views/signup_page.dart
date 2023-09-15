@@ -10,6 +10,7 @@ class SignUpPage extends StatefulWidget {
 
 class _SignUpPageState extends State<SignUpPage> {
   final formKey = GlobalKey<FormState>();
+  bool _isLoading = false;
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
   @override
@@ -82,10 +83,16 @@ class _SignUpPageState extends State<SignUpPage> {
                             color: Colors.white,
                             onPressed: (){
                               if (_emailController != null && _passwordController != null) {
+                                setState(() {
+                                  _isLoading = true;
+                                });
                                 AuthService()
                                     .createAccountWithEmail(
                                     _emailController.text, _passwordController.text)
                                     .then((value) {
+                                  setState(() {
+                                    _isLoading = false;
+                                  });
                                   if (value == "Account Created") {
                                     ScaffoldMessenger.of(context).showSnackBar(
                                         const SnackBar(content: Text("Account Created")));
@@ -102,7 +109,11 @@ class _SignUpPageState extends State<SignUpPage> {
                                 });
                               }
                             },
-                            icon: const Icon(Icons.arrow_forward),
+                            icon: _isLoading
+                                ? CircularProgressIndicator(
+                              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                            )
+                                : const Icon(Icons.arrow_forward),
                           ),
                         )
                       ],
