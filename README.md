@@ -47,7 +47,7 @@ This Flutter application allows users to save contacts in Firebase with a robust
 5. Submit a pull request.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT License](https://github.com/abhishektyagi2912/Contact_List_App/blob/master/LICENSE) - see the LICENSE file for details.
 
 ## Acknowledgments
 1. Flutter: https://flutter.dev/
